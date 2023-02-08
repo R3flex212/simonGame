@@ -1,0 +1,356 @@
+:root {
+    --vw: vw;
+}
+
+body {
+    box-sizing: border-box;
+    text-align: center;
+    background: #011f3f;
+    /* background-image: url("8-Bit-Images-HD.png"); */
+    background-position: center;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    
+}
+
+p,h1,h3,span,
+p::selection,h1::selection,h3::selection,span::selection,img::selection {
+    text-decoration: none;
+    background-color: none;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+img {
+    display: inline;
+    position: relative;
+    transform: rotate(90deg) translate(-500px);
+    scale: .3;
+    filter: blur(2.6px);
+}
+
+h1 {
+    font-size: 6rem;
+    width: 600px;
+    margin: 0 auto 50px auto;
+    cursor: pointer;
+    color: #6b9fd7;
+}
+
+
+section {
+    /* padding: 5rem 8rem; */
+    height: 100vh;
+    width: 100vw;
+    background: url("8-Bit-Images-HD.png");
+    background-position: center;
+    position: relative;
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sec2 {
+    background: url("8-Bit-Images-HDREVERSED.png");
+    height: 500px;
+}
+
+#howToPlay {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 100px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 60px;
+    gap: 60px;
+    position: relative;
+}
+
+.btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+p {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    margin: -.9em;
+    width: 70px;
+    height: 70px;
+}
+
+.pixel,
+.pixel2 {
+    font-size: 25px;
+    color: white;
+    height: auto;
+    /* margin: 10px; */
+    font-family: 'VT323';
+
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    scale: 2;
+}
+
+.pixel:active,
+.pixel2:active {
+    top: 10px;
+}
+
+/*ALL THE BUTTONS DIVIDED IN 4 ID'S TO BE ABLE TO CHANGE CLR INDIVDUALLY*/
+
+/*-------------------- DIV1 -------------------*/
+#g::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
+    background: #2d4c6b;
+    z-index: -1;
+}
+
+#g::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: -6px;
+    right: -6px;
+    background: #2d4c6b;
+    z-index: -1;
+}
+
+#g {
+    position: relative;
+    display: block;
+    margin: 40px;
+    font-family: 'VT323';
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    padding: 10px 10px;
+    margin: 50px 60px;
+    position: relative;
+    background: #2d4c6b;
+    border: #2d4c6b;
+    width: auto;
+    z-index: 2;
+}
+
+/*-------------------- DIV2  -------------------*/
+#b::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
+    background: #2d4c6b;
+    z-index: -1;
+}
+
+#b::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: -6px;
+    right: -6px;
+    background: #2d4c6b;
+    z-index: -1;
+}
+
+#b {
+    position: relative;
+    display: block;
+    margin: 40px;
+    font-family: 'VT323';
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    padding: 10px 10px;
+    margin: 50px 60px;
+    position: relative;
+    background: #2d4c6b;
+    border: #2d4c6b;
+    width: auto;
+    z-index: 2;
+}
+
+/*-------------------- DIV3 -------------------*/
+#y::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
+    background: #2d4c6b;
+    z-index: -1;
+}
+
+#y::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: -6px;
+    right: -6px;
+    background: #2d4c6b;
+    z-index: -1;
+}
+
+#y {
+    position: relative;
+    display: block;
+    margin: 40px;
+    font-family: 'VT323';
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    padding: 10px 10px;
+    margin: 50px 60px;
+    position: relative;
+    background: #2d4c6b;
+    border: #2d4c6b;
+    width: auto;
+    z-index: 2;
+}
+
+/*-------------------- DIV4 -------------------*/
+#r::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
+    background: #2d4c6b;
+    z-index: -1;
+}
+
+#r::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: -6px;
+    right: -6px;
+    background: #2d4c6b;
+    z-index: -1;
+}
+
+#r {
+    position: relative;
+    display: block;
+    margin: 40px;
+    font-family: 'VT323';
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    padding: 10px 10px;
+    margin: 50px 60px;
+    position: relative;
+    background: #2d4c6b;
+    width: auto;
+    border: #2d4c6b;
+    z-index: 2;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .gameOver {
+        font-size: 1.8em;
+        width: 390px;
+        /* color: yellow; */
+    }
+
+    h1 {
+        font-size: 2em;
+        width: 350px;
+    }
+
+    .pixel2 {
+        scale: 1.2;
+        display: inline;
+    }
+
+    p {
+        display: inline;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0;
+        padding: 10px;
+        margin: 0;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #howToPlay {
+        width: 350px;
+        position: relative;
+        bottom: 130px;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    span {
+        font-size: .7em;
+        line-height: 1px;
+    }
+
+
+}
